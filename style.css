@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(48, 185, 6, 0.788);
+}
+
+.container-piano{
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0.445);
+    color:silver;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.frontal{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-size: 40px;
+}
+
+.rangoVolumen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#rangoNumero{
+    width: 70px;
+    height: 40px;
+    background-color: rgb(13, 14, 13);
+    border: 4px solid silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    font-family: 'DS-Digital', sans-serif;
+    font-weight: bolder;
+    
+}
+
+.barraVolumen{
+    -webkit-appearance: none;
+    background-color: black;
+    height: 8px;
+}
+
+.barraVolumen::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: silver;
+    border-radius: 50%;
+}
+
+.teclas{
+    display: flex;
+    box-shadow: 0 5px 100px 0 black;
+}
+
+.teclas .blanca{
+    box-shadow: 10px 5px 20px 0 ;
+}
+
+.teclas ul{
+    display: flex;
+
+}
+
+.teclas .blanca{
+    padding-bottom:20px ;
+}
+
+.negra{
+    height: 200px;
+    width: 50px;
+    background-color: black;
+    z-index: 9999;
+    margin: 0 -28px 0 -22px;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.blanca{
+    height: 300px;
+    width: 70px;
+    background-color: beige;
+    border: 1px solid black;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    color: black;
+    cursor: pointer;
+}
+
+.teclas .blanca.clicked{
+    background-color: rgb(167, 167, 148);
+}
+
+.teclas .negra.clicked2{
+    background: linear-gradient(rgb(46, 45, 45), black)
+}
+
+.tipoSonido{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#efecto {
+    width: 200px;
+    height: 30px;
+    font-size: 1.2rem;
+    background-color: rgb(45, 114, 28);
+    color: silver;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: 1px solid silver
+
+}
+
+
+.listaNotas{
+    height: 10px;
+}

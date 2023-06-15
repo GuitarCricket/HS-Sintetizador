@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hector Sanchez">
+    <meta name="description" content="Piano en HTML, CSS y JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--!   F   A   V   I   C   O   N   -->
+    <link rel="icon" href="imagenes/ico-piano.png" type="image/x-icon">
+    <!--!   B   O   O   T   S   T   R   A   P   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>HS Sintetizador</title>
+    <script src="http://unpkg.com/tone"></script>
+    <link href="https://fonts.cdnfonts.com/css/ds-digital" rel="stylesheet">
+</head>
+<body>
+    <div class="container-piano">
+        <div class="frontal">
+            <h2>HS-Sintetizador</h2>
+            <div class="rangoVolumen">
+                <span id="rangoNumero">3</span>
+                <input type="range" class="barraVolumen" id="volumen"  min="0" max="3" value="3" step="1" onChange="rango(this.value)" onmousemove="rango(this.value)">
+            </div>
+            <div class="tipoSonido">
+                <h5>Tipo de Sonido</h5>
+                <select name="tEfecto" id="efecto">
+                    <option value="Synth">Synth</option>
+                    <option value="FMSynth">FMSynth</option>
+                    <option value="MembraneSynth">MembraneSynth</option>
+                    <option value="DuoSynth">DuoSynth</option>
+                </select>
+            </div>
+        </div>
+        <div class="teclas" id="teclas">
+            <ul class="listaNotas">
+                <li class="key blanca" data-id="C4" data-letter="a">A</li>
+                <li class="key negra" data-id="C#4" data-letter="w">W</li>
+                <li class="key blanca" data-id="D4" data-letter="s">S</li>
+                <li class="key negra" data-id="D#4" data-letter="e">E</li>
+                <li class="key blanca" data-id="E4" data-letter="d">D</li>
+                <li class="key blanca"data-id="F4" data-letter="f">F</li>
+                <li class="key negra" data-id="F#4" data-letter="t">T</li>
+                <li class="key blanca" data-id="G4" data-letter="g">G</li>
+                <li class="key negra" data-id="G#4" data-letter="y">Y</li>
+                <li class="key blanca" data-id="A4" data-letter="h">H</li>
+                <li class="key negra" data-id="A#4" data-letter="u">U</li>
+                <li class="key blanca" data-id="B4" data-letter="j">J</li>
+                <li class="key blanca" data-id="C5" data-letter="k">K</li>
+                <li class="key negra" data-id="C#5" data-letter="o">O</li>
+                <li class="key blanca" data-id="D5" data-letter="l">L</li>
+                <li class="key negra" data-id="D#5" data-letter="p">P</li>
+                <li class="key blanca" data-id="E5" data-letter="ñ">Ñ</li>
+                <li class="key blanca"data-id="F5" data-letter="z">Z</li>
+                <li class="key negra" data-id="F#5" data-letter="x">X</li>
+                <li class="key blanca" data-id="G5" data-letter="c">C</li>
+                <li class="key negra" data-id="G#5" data-letter="v">V</li>
+                <li class="key blanca" data-id="A5" data-letter="b">B</li>
+                <li class="key negra" data-id="A#5" data-letter="n">N</li>
+                <li class="key blanca" data-id="B5" data-letter="m">M</li>
+                <li class="key blanca" data-id="C6" data-letter="q">Q</li>
+                </ul>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
+
